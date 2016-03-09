@@ -20,6 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
+    NSString *value = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleName"];
+    if ([value isEqualToString:@"UnitTest"]) {
+        return YES;
+    }
     UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
     PeopleListViewController *vc = (PeopleListViewController *)nav.topViewController;
     PeopleListDataProvider *provider = [PeopleListDataProvider new];
