@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1F1D5CDE5F1AE8A24CDB67 /* Pods_BDDTestDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94E0D2A13333421D8CE4CA0 /* Pods_BDDTestDemoTests.framework */; };
+		BF677D7F1C8FF5AA00340078 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677D7E1C8FF5AA00340078 /* main.m */; };
+		BF677D821C8FF5AA00340078 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677D811C8FF5AA00340078 /* AppDelegate.m */; };
+		BF677D881C8FF5AA00340078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF677D861C8FF5AA00340078 /* Main.storyboard */; };
+		BF677D8B1C8FF5AA00340078 /* BDDTestDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF677D891C8FF5AA00340078 /* BDDTestDemo.xcdatamodeld */; };
+		BF677D8D1C8FF5AA00340078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF677D8C1C8FF5AA00340078 /* Assets.xcassets */; };
+		BF677D901C8FF5AA00340078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF677D8E1C8FF5AA00340078 /* LaunchScreen.storyboard */; };
+		BF677DA81C8FF65C00340078 /* PeopleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677DA71C8FF65C00340078 /* PeopleListViewController.m */; };
+		BF677DAB1C8FF68600340078 /* PeopleListDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677DAA1C8FF68600340078 /* PeopleListDataProvider.m */; };
+		BF677DB41C8FF74400340078 /* APICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677DB31C8FF74400340078 /* APICommunicator.m */; };
+		BF677DB91C8FF77600340078 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677DB61C8FF77600340078 /* Person+CoreDataProperties.m */; };
+		BF677DBA1C8FF77600340078 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677DB81C8FF77600340078 /* Person.m */; };
+		BF677DBD1C8FF7A300340078 /* PersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677DBC1C8FF7A300340078 /* PersonInfo.m */; };
+		BF677DC11C8FF80F00340078 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF677DC01C8FF80F00340078 /* DetailViewController.m */; };
+		BF677DC41C901DD400340078 /* PeopleListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF677DC31C901DD400340078 /* PeopleListViewControllerTests.swift */; };
+		BF677DC61C901ED600340078 /* PeopleListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF677DC51C901ED600340078 /* PeopleListDataProviderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF677D971C8FF5AA00340078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF677D721C8FF5AA00340078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF677D791C8FF5AA00340078;
+			remoteInfo = BDDTestDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF677D7A1C8FF5AA00340078 /* BDDTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDDTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF677D7E1C8FF5AA00340078 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF677D801C8FF5AA00340078 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF677D811C8FF5AA00340078 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF677D871C8FF5AA00340078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF677D8A1C8FF5AA00340078 /* BDDTestDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BDDTestDemo.xcdatamodel; sourceTree = "<group>"; };
+		BF677D8C1C8FF5AA00340078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF677D8F1C8FF5AA00340078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF677D911C8FF5AA00340078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF677D961C8FF5AA00340078 /* BDDTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDDTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF677D9C1C8FF5AA00340078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF677DA61C8FF65C00340078 /* PeopleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleListViewController.h; sourceTree = "<group>"; };
+		BF677DA71C8FF65C00340078 /* PeopleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleListViewController.m; sourceTree = "<group>"; };
+		BF677DA91C8FF68600340078 /* PeopleListDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleListDataProvider.h; sourceTree = "<group>"; };
+		BF677DAA1C8FF68600340078 /* PeopleListDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleListDataProvider.m; sourceTree = "<group>"; };
+		BF677DAC1C8FF69F00340078 /* PeopleListDataProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleListDataProviderProtocol.h; sourceTree = "<group>"; };
+		BF677DB11C8FF73100340078 /* APICommunicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICommunicatorProtocol.h; sourceTree = "<group>"; };
+		BF677DB21C8FF74400340078 /* APICommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICommunicator.h; sourceTree = "<group>"; };
+		BF677DB31C8FF74400340078 /* APICommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICommunicator.m; sourceTree = "<group>"; };
+		BF677DB51C8FF77600340078 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BF677DB61C8FF77600340078 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BF677DB71C8FF77600340078 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BF677DB81C8FF77600340078 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		BF677DBB1C8FF7A300340078 /* PersonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfo.h; sourceTree = "<group>"; };
+		BF677DBC1C8FF7A300340078 /* PersonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfo.m; sourceTree = "<group>"; };
+		BF677DBF1C8FF80F00340078 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BF677DC01C8FF80F00340078 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BF677DC21C901DD300340078 /* BDDTestDemoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDDTestDemoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF677DC31C901DD400340078 /* PeopleListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewControllerTests.swift; sourceTree = "<group>"; };
+		BF677DC51C901ED600340078 /* PeopleListDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListDataProviderTests.swift; sourceTree = "<group>"; };
+		C94E0D2A13333421D8CE4CA0 /* Pods_BDDTestDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDDTestDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B971EAF28E4D94DB441E44 /* Pods-BDDTestDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDTestDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDDTestDemoTests/Pods-BDDTestDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF29701F49DA1A90EC2CF8E /* Pods-BDDTestDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDTestDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDDTestDemoTests/Pods-BDDTestDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF677D771C8FF5AA00340078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF677D931C8FF5AA00340078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1F1D5CDE5F1AE8A24CDB67 /* Pods_BDDTestDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		559BAB963E04A667A7CB87E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94E0D2A13333421D8CE4CA0 /* Pods_BDDTestDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF677D711C8FF5AA00340078 = {
+			isa = PBXGroup;
+			children = (
+				BF677D7C1C8FF5AA00340078 /* BDDTestDemo */,
+				BF677D991C8FF5AA00340078 /* BDDTestDemoTests */,
+				BF677D7B1C8FF5AA00340078 /* Products */,
+				DD5602F45B389227A0F6BCF8 /* Pods */,
+				559BAB963E04A667A7CB87E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF677D7B1C8FF5AA00340078 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF677D7A1C8FF5AA00340078 /* BDDTestDemo.app */,
+				BF677D961C8FF5AA00340078 /* BDDTestDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF677D7C1C8FF5AA00340078 /* BDDTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BF677DB01C8FF71000340078 /* APICommunicator */,
+				BF677DAD1C8FF6A600340078 /* Modal */,
+				BF677DA51C8FF62900340078 /* PeopleList */,
+				BF677DBE1C8FF7EF00340078 /* Detail */,
+				BF677D801C8FF5AA00340078 /* AppDelegate.h */,
+				BF677D811C8FF5AA00340078 /* AppDelegate.m */,
+				BF677D861C8FF5AA00340078 /* Main.storyboard */,
+				BF677D8C1C8FF5AA00340078 /* Assets.xcassets */,
+				BF677D8E1C8FF5AA00340078 /* LaunchScreen.storyboard */,
+				BF677D911C8FF5AA00340078 /* Info.plist */,
+				BF677D891C8FF5AA00340078 /* BDDTestDemo.xcdatamodeld */,
+				BF677D7D1C8FF5AA00340078 /* Supporting Files */,
+			);
+			path = BDDTestDemo;
+			sourceTree = "<group>";
+		};
+		BF677D7D1C8FF5AA00340078 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF677D7E1C8FF5AA00340078 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF677D991C8FF5AA00340078 /* BDDTestDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF677D9C1C8FF5AA00340078 /* Info.plist */,
+				BF677DC31C901DD400340078 /* PeopleListViewControllerTests.swift */,
+				BF677DC51C901ED600340078 /* PeopleListDataProviderTests.swift */,
+				BF677DC21C901DD300340078 /* BDDTestDemoTests-Bridging-Header.h */,
+			);
+			path = BDDTestDemoTests;
+			sourceTree = "<group>";
+		};
+		BF677DA51C8FF62900340078 /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				BF677DA61C8FF65C00340078 /* PeopleListViewController.h */,
+				BF677DA71C8FF65C00340078 /* PeopleListViewController.m */,
+				BF677DA91C8FF68600340078 /* PeopleListDataProvider.h */,
+				BF677DAA1C8FF68600340078 /* PeopleListDataProvider.m */,
+				BF677DAC1C8FF69F00340078 /* PeopleListDataProviderProtocol.h */,
+			);
+			name = PeopleList;
+			sourceTree = "<group>";
+		};
+		BF677DAD1C8FF6A600340078 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				BF677DB51C8FF77600340078 /* Person+CoreDataProperties.h */,
+				BF677DB61C8FF77600340078 /* Person+CoreDataProperties.m */,
+				BF677DB71C8FF77600340078 /* Person.h */,
+				BF677DB81C8FF77600340078 /* Person.m */,
+				BF677DBB1C8FF7A300340078 /* PersonInfo.h */,
+				BF677DBC1C8FF7A300340078 /* PersonInfo.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		BF677DB01C8FF71000340078 /* APICommunicator */ = {
+			isa = PBXGroup;
+			children = (
+				BF677DB11C8FF73100340078 /* APICommunicatorProtocol.h */,
+				BF677DB21C8FF74400340078 /* APICommunicator.h */,
+				BF677DB31C8FF74400340078 /* APICommunicator.m */,
+			);
+			name = APICommunicator;
+			sourceTree = "<group>";
+		};
+		BF677DBE1C8FF7EF00340078 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BF677DBF1C8FF80F00340078 /* DetailViewController.h */,
+				BF677DC01C8FF80F00340078 /* DetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		DD5602F45B389227A0F6BCF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2B971EAF28E4D94DB441E44 /* Pods-BDDTestDemoTests.debug.xcconfig */,
+				EBF29701F49DA1A90EC2CF8E /* Pods-BDDTestDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF677D791C8FF5AA00340078 /* BDDTestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF677D9F1C8FF5AA00340078 /* Build configuration list for PBXNativeTarget "BDDTestDemo" */;
+			buildPhases = (
+				BF677D761C8FF5AA00340078 /* Sources */,
+				BF677D771C8FF5AA00340078 /* Frameworks */,
+				BF677D781C8FF5AA00340078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BDDTestDemo;
+			productName = BDDTestDemo;
+			productReference = BF677D7A1C8FF5AA00340078 /* BDDTestDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF677D951C8FF5AA00340078 /* BDDTestDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF677DA21C8FF5AA00340078 /* Build configuration list for PBXNativeTarget "BDDTestDemoTests" */;
+			buildPhases = (
+				8031D5FA40F1EBAD2D62D817 /* Check Pods Manifest.lock */,
+				BF677D921C8FF5AA00340078 /* Sources */,
+				BF677D931C8FF5AA00340078 /* Frameworks */,
+				BF677D941C8FF5AA00340078 /* Resources */,
+				573F566698C830AFF86202BE /* Embed Pods Frameworks */,
+				1727F593458BE9A0821D95A8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF677D981C8FF5AA00340078 /* PBXTargetDependency */,
+			);
+			name = BDDTestDemoTests;
+			productName = BDDTestDemoTests;
+			productReference = BF677D961C8FF5AA00340078 /* BDDTestDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF677D721C8FF5AA00340078 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = vincent;
+				TargetAttributes = {
+					BF677D791C8FF5AA00340078 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					BF677D951C8FF5AA00340078 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BF677D791C8FF5AA00340078;
+					};
+				};
+			};
+			buildConfigurationList = BF677D751C8FF5AA00340078 /* Build configuration list for PBXProject "BDDTestDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF677D711C8FF5AA00340078;
+			productRefGroup = BF677D7B1C8FF5AA00340078 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF677D791C8FF5AA00340078 /* BDDTestDemo */,
+				BF677D951C8FF5AA00340078 /* BDDTestDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF677D781C8FF5AA00340078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF677D901C8FF5AA00340078 /* LaunchScreen.storyboard in Resources */,
+				BF677D8D1C8FF5AA00340078 /* Assets.xcassets in Resources */,
+				BF677D881C8FF5AA00340078 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF677D941C8FF5AA00340078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1727F593458BE9A0821D95A8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDDTestDemoTests/Pods-BDDTestDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		573F566698C830AFF86202BE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDDTestDemoTests/Pods-BDDTestDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8031D5FA40F1EBAD2D62D817 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF677D761C8FF5AA00340078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF677DB91C8FF77600340078 /* Person+CoreDataProperties.m in Sources */,
+				BF677D821C8FF5AA00340078 /* AppDelegate.m in Sources */,
+				BF677DA81C8FF65C00340078 /* PeopleListViewController.m in Sources */,
+				BF677DAB1C8FF68600340078 /* PeopleListDataProvider.m in Sources */,
+				BF677D7F1C8FF5AA00340078 /* main.m in Sources */,
+				BF677DBA1C8FF77600340078 /* Person.m in Sources */,
+				BF677DC11C8FF80F00340078 /* DetailViewController.m in Sources */,
+				BF677DB41C8FF74400340078 /* APICommunicator.m in Sources */,
+				BF677DBD1C8FF7A300340078 /* PersonInfo.m in Sources */,
+				BF677D8B1C8FF5AA00340078 /* BDDTestDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF677D921C8FF5AA00340078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF677DC41C901DD400340078 /* PeopleListViewControllerTests.swift in Sources */,
+				BF677DC61C901ED600340078 /* PeopleListDataProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF677D981C8FF5AA00340078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF677D791C8FF5AA00340078 /* BDDTestDemo */;
+			targetProxy = BF677D971C8FF5AA00340078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF677D861C8FF5AA00340078 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF677D871C8FF5AA00340078 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF677D8E1C8FF5AA00340078 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF677D8F1C8FF5AA00340078 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF677D9D1C8FF5AA00340078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF677D9E1C8FF5AA00340078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF677DA01C8FF5AA00340078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BDDTestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vincent.BDDTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF677DA11C8FF5AA00340078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BDDTestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vincent.BDDTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF677DA31C8FF5AA00340078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B971EAF28E4D94DB441E44 /* Pods-BDDTestDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BDDTestDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vincent.BDDTestDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BDDTestDemoTests/BDDTestDemoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BDDTestDemo.app/BDDTestDemo";
+			};
+			name = Debug;
+		};
+		BF677DA41C8FF5AA00340078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF29701F49DA1A90EC2CF8E /* Pods-BDDTestDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BDDTestDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vincent.BDDTestDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BDDTestDemoTests/BDDTestDemoTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BDDTestDemo.app/BDDTestDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF677D751C8FF5AA00340078 /* Build configuration list for PBXProject "BDDTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF677D9D1C8FF5AA00340078 /* Debug */,
+				BF677D9E1C8FF5AA00340078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF677D9F1C8FF5AA00340078 /* Build configuration list for PBXNativeTarget "BDDTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF677DA01C8FF5AA00340078 /* Debug */,
+				BF677DA11C8FF5AA00340078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF677DA21C8FF5AA00340078 /* Build configuration list for PBXNativeTarget "BDDTestDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF677DA31C8FF5AA00340078 /* Debug */,
+				BF677DA41C8FF5AA00340078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF677D891C8FF5AA00340078 /* BDDTestDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF677D8A1C8FF5AA00340078 /* BDDTestDemo.xcdatamodel */,
+			);
+			currentVersion = BF677D8A1C8FF5AA00340078 /* BDDTestDemo.xcdatamodel */;
+			path = BDDTestDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF677D721C8FF5AA00340078 /* Project object */;
+}
